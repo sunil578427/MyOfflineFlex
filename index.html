@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Clean Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="menu-icon" id="openSidebar">☰</span>
+            <div class="logo">NETFLIX</div>
+            <nav class="desktop-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+                <a href="#">Pages</a>
+            </nav>
+        </div>
+        <div class="nav-right">
+            <button class="login-btn" id="openLogin">Sign In</button>
+        </div>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-sidebar" id="closeSidebar">&times;</span>
+        <div class="sidebar-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Pages</a>
+        </div>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="brand-badge">NETFLIX ORIGINAL</div>
+            <h1 class="hero-title">Welcome to the Jungle </h1>
+            
+            <div class="movie-meta">
+                <span class="rating">⭐⭐⭐⭐★ <span class="rating-num">7.3(Imdb)</span></span>
+                <span class="age-limit">16+</span>
+                <span class="duration">2h 21min</span>
+            </div>
+
+            <p class="hero-desc">When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron.</p>
+            
+            <div class="hero-buttons">
+                <button class="btn play-btn play-trailer" data-video="videos/trailer1.mp4">▶ PLAY TRAILER</button>
+                <button class="btn info-btn">More details</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies-section">
+        <div class="section-header">
+            <h2 class="row-title">Trending Now</h2>
+        </div>
+        <div class="movies-row">
+            <div class="movie-card">
+                <img src="images/poster1.jpg" alt="Money Heist">
+                <div class="card-overlay">
+                    <h4>Sunil growth juurny </h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer2.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/poster2.jpg" alt="Stranger Things">
+                <div class="card-overlay">
+                    <h4>Dhamaalpur 4</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer3.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/poster4.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer4.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/poster5.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer5.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster6.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer6.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster6.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer7.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster1.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer2.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster2.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer3.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster4.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer4.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster5.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer5.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+             <div class="movie-card">
+                <img src="images/poster6.jpg" alt="Wednesday">
+                <div class="card-overlay">
+                    <h4>Wednesday</h4>
+                    <button class="card-play-btn play-trailer" data-video="videos/trailer6.mp4">▶ Watch Trailer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-modal" id="videoModal">
+        <div class="video-container">
+            <span class="close-video" id="closeVideo">&times;</span>
+            <video id="trailerPlayer" controls></video>
+        </div>
+    </div>
+
+    <div class="login-modal" id="loginModal">
+        <div class="login-box">
+            <span class="close-login" id="closeLogin">&times;</span>
+            <h2>Sign In</h2>
+            <form id="loginForm">
+                <input type="email" placeholder="Email or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="submit-login-btn">Sign In</button>
+            </form>
+        </div>
+    </div>
+        <footer class="footer">
+        <p class="footer-title">Questions? Call 000-800-919-1694</p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Media Centre</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <p class="footer-copyright">© 2026 Netflix India - Clone Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
